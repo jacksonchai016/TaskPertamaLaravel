@@ -55,4 +55,20 @@
             </p>
         </a>
     </li>
+    <li class="nav-item">
+        <a href="/admin/replacement_class" class="nav-link">
+            <i class="nav-icon fas fa-school"></i>
+            <p>
+            Replacement Class
+            </p>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a href="/laporan/replacement_class" class="nav-link">
+            <i class="nav-icon fas fa-book"></i>
+            <p>
+            Laporan Replacement Class
+            </p>
+        </a>
+    </li>
 </ul>
