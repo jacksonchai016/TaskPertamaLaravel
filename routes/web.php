@@ -28,3 +28,10 @@ Route::resource('admin/schedule', 'App\\Http\\Controllers\\Admin\scheduleControl
 Route::resource('admin/replacement_class', 'App\Http\Controllers\Admin\replacement_classController');
 Route::get('/laporan/replacement_class', [LaporanController::class, 'index']);
 Route::get('/laporan/replacement_class/pdf', [LaporanController::class, 'cetak_pdf']);
+Route::resource('admin/room', 'App\Http\Controllers\Admin\roomController');
+Route::resource('admin/location', 'App\Http\Controllers\Admin\locationController');
+Route::resource('admin/user_id', 'App\Http\Controllers\Admin\user_idController');
+Route::resource('admin/lesson', 'App\Http\Controllers\Admin\lessonController');
+Route::resource('admin/missing_item', 'App\Http\Controllers\Admin\missing_itemController');
+Route::resource('admin/request_missing_item', 'App\Http\Controllers\Admin\request_missing_itemController');
+Route::resource('admin/student', 'App\Http\Controllers\Admin\studentController');

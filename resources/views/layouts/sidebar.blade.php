@@ -1,5 +1,13 @@
 <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
     <li class="nav-item">
+        <a href="/admin/user_id" class="nav-link">
+            <i class="nav-icon fas fa-user-alt"></i>
+            <p>
+            User
+            </p>
+        </a>
+    </li>
+    <li class="nav-item">
     <a href="/admin/category" class="nav-link">
         <i class="nav-icon fas fa-align-justify"></i>
         <p>
@@ -68,6 +76,47 @@
             <i class="nav-icon fas fa-book"></i>
             <p>
             Laporan Replacement Class
+            </p>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a href="/admin/room" class="nav-link">
+            <i class="nav-icon fas fa-door-closed"></i>
+            <p>
+            Room
+            </p>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a href="/admin/location" class="nav-link">
+            <i class="nav-icon fas fa-map-marker-alt"></i>
+            <p>
+            Location
+            </p>
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a href="/admin/lesson" class="nav-link">
+            <i class="nav-icon fas fa-chalkboard-teacher"></i>
+            <p>
+            Lesson
+            </p>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a href="/admin/request_missing_item" class="nav-link">
+            <i class="nav-icon fas fa-hand-holding"></i>
+            <p>
+            Request Missing Item
+            </p>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a href="/admin/student" class="nav-link">
+            <i class="nav-icon fas fa-user-graduate"></i>
+            <p>
+            Student
             </p>
         </a>
     </li>
