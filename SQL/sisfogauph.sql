@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 20, 2022 at 04:47 PM
+-- Generation Time: Nov 26, 2022 at 10:11 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -106,7 +106,15 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (8, '2022_11_12_085545_create_missing_items_statuses_table', 1),
 (9, '2022_11_19_140512_create_attendances_table', 1),
 (10, '2022_11_19_140614_create_reservations_table', 1),
-(11, '2022_11_19_140640_create_schedules_table', 1);
+(11, '2022_11_19_140640_create_schedules_table', 1),
+(12, '2022_11_20_164515_create_replacement_classes_table', 2),
+(13, '2022_11_26_064808_create_rooms_table', 3),
+(14, '2022_11_26_065139_create_locations_table', 4),
+(15, '2022_11_26_081151_create_user_ids_table', 5),
+(16, '2022_11_26_081304_create_lessons_table', 5),
+(17, '2022_11_26_082325_create_missing_items_table', 6),
+(18, '2022_11_26_082631_create_request_missing_items_table', 6),
+(19, '2022_11_26_082925_create_students_table', 6);
 
 -- --------------------------------------------------------
 
@@ -120,6 +128,13 @@ CREATE TABLE `missing_items_statuses` (
   `updated_at` timestamp NULL DEFAULT NULL,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `missing_items_statuses`
+--
+
+INSERT INTO `missing_items_statuses` (`id`, `created_at`, `updated_at`, `name`) VALUES
+(1, '2022-11-20 11:14:04', '2022-11-20 11:14:04', 'Jackson');
 
 -- --------------------------------------------------------
 
@@ -337,13 +352,13 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `missing_items_statuses`
 --
 ALTER TABLE `missing_items_statuses`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `personal_access_tokens`
