@@ -1,6 +1,7 @@
 <?php
 
-use App\Http\Controllers\LaporanController;
+use App\Http\Controllers\ViewPeminjamanBuku;
+use App\Http\Controllers\PinjamanBukuController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,13 +15,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('layouts.app2');
+});
+
 
 
 Route::resource('admin/mahasiswa', 'App\Http\Controllers\Admin\mahasiswaController');
 Route::resource('admin/buku', 'App\Http\Controllers\Admin\bukuController');
 Route::resource('admin/admin', 'App\Http\Controllers\Admin\AdminController');
-Route::get('/laporan/replacement_class', [LaporanController::class, 'index']);
-Route::get('/laporan/replacement_class/pdf', [LaporanController::class, 'cetak_pdf']);
+Route::get('/laporan/v_peminjamanbuku', [PinjamanBukuController::class, 'index']);
+Route::get('/laporan/v_peminjamanbuku/print', [PinjamanBukuController::class, 'print']);

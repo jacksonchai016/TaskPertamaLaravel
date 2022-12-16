@@ -187,7 +187,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Pelayanan Peminjaman Buku</h1>
+            <h1 class="m-0">Soal dan penjelasan solusi website</h1>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -208,15 +208,13 @@
             <div class="card">
               <div class="card-header">
                 <h3 class="card-title">
-                  <i class="fas fa-chart-pie mr-1"></i>
-                  @yield('header')
+                  Sistem Informasi Perpustakaan Perguruan Tinggi
                 </h3>
-                <div class="card-tools">
-                  
-                </div>
+                
               </div><!-- /.card-header -->
               <div class="card-body">
-                @yield('content')
+                <img src='{{ asset("AdminLTE/dist/img/erd-perguruan-tinggi.png") }}' style="margin: 0 0 0 20%; width: 600px;">
+                <p style="font-size: 18pt;">Sistemphp juga mengembangkan aplikasi berbasis web php dan database mysql untuk mengelola data yang ada di perpustakaan. Data perpustakaan yang di kelola misalnya data buku, data admin perpustakaan dan data mahasiswa yang meminjam buku. Pengelolaan perpustakaan bertujuan agar manajemen perpustakaan dapat terorganisir dengan baik. Untuk peningkatan mutu dari perpustakaan misal dari segi pelayanan dan koleksi buku. Evaluasi manajemen perpustakaan penting dilakukan. Dengan sistem informasi perpustakaan yang dikembangkan sistemphp. Hal tersebut dapat melakukan evaluasi dengan menggunakan data laporan yang ada pada sistem perpustakaan. Penggunaan akses begitu mudah sehingga tidak membingungkan dan menyulitkan pengguna.</p>
               </div><!-- /.card-body -->
             </div>
             <!-- /.card -->

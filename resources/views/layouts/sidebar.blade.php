@@ -9,25 +9,18 @@
     </li>
     <li class="nav-item">
     <a href="/admin/buku" class="nav-link">
-            <i class="nav-icon fas fa-align-justify"></i>
+            <i class="nav-icon fas fa-book"></i>
             <p>
             Buku
             </p>
     </a>
     </li>
+    
     <li class="nav-item">
-        <a href="/admin/admin" class="nav-link">
-            <i class="nav-icon fab fa-critical-role"></i>
+        <a href="/laporan/v_peminjamanbuku" class="nav-link">
+            <i class="nav-icon fas fa-user-lock"></i>
             <p>
-            Admin
-            </p>
-        </a>
-    </li>
-    <li class="nav-item">
-        <a href="/admin/admin" class="nav-link">
-            <i class="nav-icon fab fa-critical-role"></i>
-            <p>
-            Admin
+            View Peminjaman Buku
             </p>
         </a>
     </li>
